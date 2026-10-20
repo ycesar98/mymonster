@@ -1,0 +1,130 @@
+p{
+    color: rgb(175, 239, 255);
+}
+
+.parrafo{
+    color: rgb(31, 44, 157);
+    text-align: center;
+}
+
+#titulo{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#footer{
+    width: 95%;
+    height: 6%;
+    background-color: rgb(43, 107, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    margin: 0%;
+}
+
+li {
+    list-style:lower-greek;
+}
+
+.ver_mas_button{
+    background-color: rgb(4, 4, 106);
+    color: rgb(175, 239, 255);
+    width: auto;
+    height: 40px;
+    border-radius: 12%;
+    border: 3px solid rgb(175, 239, 255);
+    padding: 10px;
+
+}
+
+.img_logo{
+    height: 80px;
+    width: auto;
+}
+
+header, main, footer{
+    border: 2px solid navy;
+    margin: 10px;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: auto;
+    text-align: center;
+}
+    
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    width: auto;
+}
+
+.carrito{
+    color: black;
+}
+
+.contenedor_carrito{
+    background-color: rgb(179, 85, 18);
+    padding: 10px;
+    position: relative;
+}
+
+.globito {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    border-radius: 15px;
+    background-color: rgb(194, 22, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+img, nav, div{
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.creado_por_yari{
+    margin: 0;
+}
+
+/* Media Inquires */
+@media (width <=576px){
+    ul{
+        flex-direction: column;
+    }
+    .contenedor_carrito{
+        background-color: blanchedalmond;
+    }
+    .ver_mas_button{
+        display: none;
+    }
+}
+
+@media (max-width: 768ppx){
+    .globito{
+        background-color: blue;
+    }
+}
